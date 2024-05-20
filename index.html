@@ -1,0 +1,202 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper h-100">
+        <!-- Sidebar -->
+        <aside id="sidebar h-100">
+            <div class="p-5 pb-3 text-center">
+                <div class="sidebar-logo">
+                    <a href="index.html">
+                        <img src="logo.jpg" alt="" id="logo">
+                    </a>
+                </div>
+            </div>
+            <hr class="m-4 border border-black">
+            <ul class="sidebar-nav">
+                <li class="sidebar-item">
+                    <a href="index.html" class="sidebar-link active">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="riders.html" class="sidebar-link">
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <span>Riders</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="status.html" class="sidebar-link">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>Status</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="deliveries.html" class="sidebar-link">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                        <span>Deliveries</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </div>
+        </aside>
+
+        <div class="container-fluid p-3 h-100">
+            <div class="p-5">
+                <!-- Navbar-Top -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5">
+                            <h1>
+                                Dashboard
+                            </h1>
+                        </div>
+
+                        <div class="ps-4 col-4">
+                            <div class="input-group">
+                                <input type="text" class="py-3 form-control rounded-start-pill border-primary"
+                                    placeholder="Delivery ID" aria-label="Recipient's username"
+                                    aria-describedby="button-addon2">
+                                <button class="btn btn-primary rounded-end-pill" type="button"
+                                    id="button-addon2">Track</button>
+                            </div>
+                        </div>
+
+                        <div class="col-3">
+                            <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
+                                <button type="button" class="py-3 btn btn-secondary" data-bs-container="body" data-bs-toggle="popover"
+                                    data-bs-placement="bottom" data-bs-title="Notifications" data-bs-content="No notifications.">
+                                    <i class="bi bi-bell"></i>
+                                </button>
+                        
+                                <button type="button" class="btn btn-outline-secondary dropdown-toggle rounded-0" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <i class="bi bi-person-circle"></i>
+                                    User 1
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">User 2</a></li>
+                                    <li><a class="dropdown-item" href="#">User 3</a></li>
+                                </ul>
+                        
+                                <button type="button" class="btn btn-secondary">
+                                    <i class="bi bi-gear"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Cards -->
+                <!-- Numbers -->
+                <div class="container pt-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card bg-success text-light h-100 rounded-5 shadow p-1 pe-">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h1 class="display-5 fs-5">Online Riders</h1>
+                                        </div>
+                                        <div class="col-2 align-self-center">
+                                            <i class="fas fa-user icon-online"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h1 class="display-3 fw-bold">50</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card bg-secondary-subtle h-100 rounded-5 shadow p-1 pe-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10">Total Deliveries</h1>
+                                        </div>
+                                        <div class="col-2 align-self-center">
+                                            <i class="fa-solid fa-truck icon-online"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h1 class="display-3 fw-bold">25</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="card bg-primary-subtle h-100 rounded-5 shadow p-1 pe-3">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <h1 class="display-5 fs-5">Total Riders</h1>
+                                        </div>
+                                        <div class="col-2 align-self-center">
+                                            <i class="fa-solid fa-users icon-online"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h1 class="display-3 fw-bold">50</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>    
+                        
+
+                </div>
+
+                <!-- Graph(Analytics) -->
+                <div class="container pt-5">
+                    <div class="card shadow-lg">
+                        <div class="p-3">
+                            <h1>Delivery Analytics</h1>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Graph(Ratings) -->
+                <div class="container pt-5">
+                    <div class="card shadow-lg">
+                        <div class="p-3">
+                            <h1>Rider Ratings</h1>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <footer class="mt-auto py-3"></footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <script src="script.js"></script>
+</body>
+
+</html>

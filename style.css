@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.wrapper {
+    display: flex;
+}
+
+.container-fluid {
+    background-color: #F7F6F8;
+}
+
+.border-primary::placeholder {
+    color: #0d6efd;
+}
+
+#logo {
+    scale: 1.5;
+}
+
+
+
+.icon-online {
+    scale: 2;
+}
+
+.d-flex {
+    border-bottom: 3px solid #fff;
+    padding: 2rem 1rem;
+}
+
+#sidebar {
+    width: 500px;
+    min-width: 260px;
+    z-index: 1000;
+    transition: all .25s ease-in-out;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo {
+    font-size: 1.5rem;
+    color: #353535;
+    background-color: transparent;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem 1.5rem;
+}
+
+.sidebar-logo {
+    margin: auto 0;
+}
+
+.sidebar-logo a {
+    color: #353535;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    padding: 2rem 0;
+    flex: 1 1 auto;
+}
+
+a.sidebar-link {
+    padding: 1.5rem 2rem;
+    color: #353535;
+    display: block;
+    font-size: 1rem;
+    white-space: nowrap;
+    border-right: 3px solid transparent;
+}
+
+.sidebar-link i {
+    font-size: 1.5rem;
+    margin-right: .75rem;   
+}
+
+.sidebar-link.active {
+    background-color: rgba(155, 155, 155, 0.075);
+    border-right: 3px solid #0d6efd;
+}
+
+a.sidebar-link:hover {
+    background-color: rgba(155, 155, 155, 0.075);
+    border-right: 3px solid #0d6efd;
+}
+
+.sidebar-item {
+    position: relative;
+}
+
+footer {
+    background-color: #001d49;
+}
+
+.circle-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: blue;
+    color: white;
+}
+
+.circle-icon i {
+    scale: 3;
+}
